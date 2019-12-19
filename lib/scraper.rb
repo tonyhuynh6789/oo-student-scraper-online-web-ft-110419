@@ -38,7 +38,7 @@ class Scraper
           student_hash[:blog] = link
       end 
     end 
-    student_hash[:profile_quote] = doc.css('.profile-quote').text.gsub("\"", "")
+    student_hash[:profile_quote] = doc.css('.profile-quote').text
     student_hash[:bio] = doc.css('.bio-content').text
     # binding.pry
     student_hash
